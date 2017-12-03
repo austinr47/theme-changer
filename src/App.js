@@ -40,6 +40,11 @@ class App extends Component {
     this.setState ({
       allowEdit: val
     })
+
+    this.updateColor = this.updateColor.bind(this);
+    this.updateSize = this.updateColor.bind(this);
+    this.updateFamily = this.updateColor.bind(this);
+    this.updateEditStatus = this.updateColor.bind(this);
   }
 
   render() {
