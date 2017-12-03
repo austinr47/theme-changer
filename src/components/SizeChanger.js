@@ -9,6 +9,11 @@ export default class SizeChanger extends Component {
   }
 
   // componentWillReceiveProps
+  componentWillReceiveProps(props){
+    this.setState ({
+      allowEdit: props
+    })
+  }
 
   render() {
     return (
