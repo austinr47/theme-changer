@@ -18,14 +18,29 @@ class App extends Component {
       allowEdit: 'true'
     }
   }
+  updateColor(val) {
+    this.setState ({
+      fontColor: val
+    })
+  }
 
-  // updateColor
+  updateSize(val) {
+    this.setState ({
+      fontSize: val
+    })
+  }
 
-  // updateSize
+  updateFamily(val) {
+    this.setState ({
+      fontFamily: val
+    })
+  }
 
-  // updateFamily
-
-  // updateEditStatus
+  updateEditStatus(val) {
+    this.setState ({
+      allowEdit: val
+    })
+  }
 
   render() {
     return (
