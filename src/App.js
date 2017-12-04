@@ -9,19 +9,19 @@ import TextContainer from './components/TextContainer';
 
 class App extends Component {
   // constructor
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       fontColor: 'black',
       fontSize: 12,
       fontFamily: 'monospace',
-      allowEdit: 'true'
+      allowEdit: 'true',
     };
     this.updateColor = this.updateColor.bind(this);
     this.updateSize = this.updateSize.bind(this);
     this.updateFamily = this.updateFamily.bind(this);
     this.updateEditStatus = this.updateEditStatus.bind(this);
-  }
+  };
 
   updateColor(val) {
     this.setState ({
